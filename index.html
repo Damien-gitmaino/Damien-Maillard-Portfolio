@@ -60,9 +60,10 @@
 <section>
     <div class="absolute inset-x-0 bottom-0 h-16 flex flex-row justify-center items-center">
         <a href="#services" type="button"
-                class="text-white bg-yellow-500 hover:bg-yellow-600 font-medium rounded-full text-sm px-5 py-2.5 text-center flex flex-row">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+           class="text-white bg-yellow-500 hover:bg-yellow-600 font-medium rounded-full text-sm px-5 py-2.5 text-center flex flex-row">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-5 h-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
             </svg>
 
             Voir plus loin
@@ -90,18 +91,18 @@
                         <img src="./assets/img/linkedin.png" alt="linkedin" class="w-5 h-5">
                     </a>
                     <a href="https://www.malt.fr/profile/damienmaillard" type="button"
-                            class="text-white bg-[#24292F] hover:bg-[#24292F]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
+                       class="text-white bg-[#24292F] hover:bg-[#24292F]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
                         <img src="./assets/img/malt.png" alt="malt" class="w-5 h-5">
                     </a>
-                    <button type="button"
-                            class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-yellow-500 hover:bg-yellow-600 rounded-lg text-center">
+                    <a href="#contacts" type="button"
+                       class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-yellow-500 hover:bg-yellow-600 rounded-lg text-center">
                         <svg class="w-3.5 h-3.5 text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor" viewBox="0 0 20 16">
                             <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
                             <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                         </svg>
                         Contactez-moi !
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -110,14 +111,124 @@
 
 </section>
 
+<section id="contacts">
+    <div class="container flex flex-row justify-center py-8 mx-auto w-screen h-screen space-x-3">
+        <div class="flex flex-col justify-center items-center h-full w-3/5">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contactez Moi</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+                Vous voulez travailler avec moi . Envoyez-moi un message grace à ce formulaire ! Je vous recontacterais
+                dans les plus brefs délais.
+            </p>
+            <form class="space-y-8 w-full" id="contact-form">
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Votre nom</label>
+                    <input type="text" id="subject"
+                           class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                           placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Votre email</label>
+                    <input type="email" id="email"
+                           class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                           placeholder="name@gmail.com" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Votre message</label>
+                    <textarea id="message" rows="6"
+                              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                              placeholder="Laisser votre message..." required></textarea>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <button type="submit"
+                            class="flex flex-row items-center py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-yellow-700 sm:w-fit hover:bg-yellow-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-5 h-5 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
+                        </svg>
+                        Envoyer
+                    </button>
+                    <div>
+                        <a href="https://www.linkedin.com/in/damien-maillard-3607441a8/" type="button"
+                           class="text-white bg-[#24292F] hover:bg-[#24292F]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
+                            <img src="./assets/img/linkedin.png" alt="linkedin" class="w-5 h-5">
+                        </a>
+                        <a href="https://www.malt.fr/profile/damienmaillard" type="button"
+                           class="text-white bg-[#24292F] hover:bg-[#24292F]/90 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
+                            <img src="./assets/img/malt.png" alt="malt" class="w-5 h-5">
+                        </a>
+                    </div>
+                </div>
 
-<section id="services">
-    <div class="min-h-screen min-w-screen bg-white">
-        <div class="container mx-auto">
-            <p class="text-black">black</p>
+            </form>
+            <p class="flex flex-col text-start w-full mt-10">
+                <span class="font-semibold text-1xl">Information de contact autre</span>
+                <span class="text-gray-500">
+                    <a href="mailto:damien.jd.maillard@gmail.com" class="text-gray-500 hover:text-gray-600 hover:underline">
+                        Mon mail professional [damien.jd.maillard@gmail.com]
+                    </a>
+                </span>
+                <span class="text-gray-500">
+                    <a href="tel:+337 86 91 92 38" class="text-gray-500 hover:text-gray-600 hover:underline">
+                        Mon numéro de téléphone [+33 7 86 91 92 38]
+                    </a>
+                </span>
+            </p>
         </div>
+
     </div>
 </section>
 
+<script>
+    // Sélection du formulaire
+    const form = document.getElementById('contact-form');
+
+    // Gestionnaire d'événement onSubmit
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Récupération des valeurs des champs du formulaire
+        const name = document.getElementById('subject').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Construction des données à envoyer
+        const data = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        console.log(data);
+        alert('Votre message a été envoyé avec succès !');
+
+    // Envoi de la requête POST à l'URL du serveur d'envoi d'e-mails
+    /* fetch('URL_DU_SERVEUR_D_ENVOI', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => {
+            if (response.ok) {
+                // Le formulaire a été envoyé avec succès
+                alert('Votre message a été envoyé avec succès !'); // Vous pouvez modifier ce message selon vos besoins
+                form.reset(); // Réinitialise le formulaire
+            } else {
+                // Une erreur s'est produite lors de l'envoi du formulaire
+                alert('Une erreur s\'est produite. Veuillez réessayer !'); // Vous pouvez modifier ce message selon vos besoins
+            }
+        })
+        .catch(error => {
+            console.error('Erreur:', error);
+            alert('Une erreur s\'est produite. Veuillez réessayer !'); // Vous pouvez modifier ce message selon vos besoins
+        }); */
+});
+</script>
+
+
 </body>
+
+
 </html>
