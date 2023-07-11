@@ -51,8 +51,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-
 </head>
 <body>
 
@@ -107,11 +105,11 @@
     </div>
 </section>
 
-
 <nav class="navbar bg-white py-4 px-6 shadow">
     <div class="container mx-auto flex justify-between items-center">
         <ul class="flex space-x-4">
-            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#services" class="hover:underline">Mes services</a></li>
+            <li><a href="#profile" class="hover:underline">À propos de moi</a></li>
             <li><a href="#portfolio" class="hover:underline">PortFolio</a></li>
             <li><a href="#recommendation" class="hover:underline">Recommendations</a></li>
             <li><a href="#contacts" class="hover:underline">Contact</a></li>
@@ -122,7 +120,6 @@
         </div>
     </div>
 </nav>
-
 
 <section id="services">
     <div class="container flex flex-col justify-center py-8 mx-auto w-screen h-screen space-x-3">
@@ -229,6 +226,253 @@
     </div>
 </section>
 
+<section id="profile">
+    <div class="container flex items-center mx-auto w-screen h-screen">
+        <div class="flex items-center justify-center w-full h-auto grid grid-cols-4 gap-2">
+            <!-- Profile Card (block 1) -->
+            <div class="space-y-3 h-full w-full p-6 bg-white border border-gray-200 rounded-lg shadow row-span-2 col-span-1">
+                <img alt="Damien-md" src="./assets/img/damien.png"
+                     class="w-24 h-24 rounded-md mb-2">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Damien
+                        MAILLARD</h5>
+                </a>
+                <div class="flex flex-col">
+                    <div class="flex flex-row space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="w-6 h-6 text-gray-900">
+                            <path fill-rule="evenodd"
+                                  d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                                  clip-rule="evenodd"/>
+                            <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"/>
+                        </svg>
+                        <p class="mb-3 font-normal text-gray-400">FullStack Developer</p>
+                    </div>
+                    <div class="flex flex-row space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="w-6 h-6 text-gray-900">
+                            <path fill-rule="evenodd"
+                                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                        <p class="mb-3 font-normal text-gray-400">Lille, France</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-normal text-gray-400">Adresse e-mail</p>
+                    <a href="mailto:damien.jd.maillard@gmail.com"
+                       class="text-black hover:underline">
+                        damien.jd.maillard@gmail.com
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-normal text-gray-400">Adresse personnelle</p>
+                    <p class="text-black">10 Rue Jeanne Maillotte, Lille 59800, France</p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-normal text-gray-400">Numéro de téléphone</p>
+                    <a href="tel:+337 86 91 92 38" class="text-black hover:underline">
+                        +33 7 86 91 92 38
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-normal text-gray-400">Language</p>
+                    <p class="font-normal text-black">
+                        Français <span class="text-gray-400">(langue maternelle)</span>
+                    </p>
+                    <p class="font-normal text-black">
+                        Anglais <span class="text-gray-400">(courant)</span>
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-semibold text-black mb-2">Compétence logicielle</p>
+                    <div class="flex flex-row space-x-2">
+                        <img src="./assets/img/github.png" alt="GithubIcon" class="w-7 h-7">
+                        <img src="./assets/img/Office.png" alt="OfficeIcon" class="w-7 h-7">
+                        <img src="./assets/img/postman.png" alt="PostmanIcon" class="w-7 h-7">
+                        <img src="./assets/img/jb_beam.png" alt="JetBrainIcon" class="w-7 h-7">
+                        <img src="./assets/img/figma.png" alt="FigmaIcon" class="w-auto h-7">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- À propos de moi (block 2) -->
+            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
+                <p class="font-semibold text-black mb-2">À propos de moi</p>
+                <p class="text-gray-400 indent-8">
+                    Je suis un développeur passionné par le développement et les nouvelles technologies. Je suis constamment en auto-formation, à la recherche des meilleures technologies et des meilleures méthodes pour réaliser et améliorer mes projets. Je suis une personne très curieuse, j'aime découvrir de nouvelles choses et je suis toujours prêt à relever de nouveaux défis. Je suis efficace et autonome, capable de travailler seul ou en équipe. Je m'adapte également rapidement à n'importe quelle situation.
+                </p>
+                <p class="text-gray-400 indent-8">
+                    J'apprécie le contact avec les clients afin de comprendre leurs besoins et leur proposer la meilleure solution. Grâce à ma formation et ma passion pour le design (UX/UI), je suis capable de créer des maquettes et des prototypes pour les interfaces mobiles ou web de vos projets. Je suis rigoureux et j'attache une grande importance à ce que mon code soit propre et bien structuré, pour une meilleure maintenabilité et évolutivité. Je suis également axé sur les performances et la qualité de votre produit.
+                </p>
+                <p class="text-gray-400 indent-8">
+                    Je serais ravi de mettre mes compétences à votre service. N'hésitez pas à me  <a href="#contacts" class="hover:underline font-semibold text-gray-500">contacter</a> pour obtenir plus d'informations.
+                </p>
+            </div>
+
+            <!-- Expérience (block 4) -->
+            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow row-span-3 col-span-1">
+                <p class="font-semibold text-black mb-2">Expérience</p>
+                <ol class="relative w-full border-l border-gray-200 dark:border-gray-700">
+                    <li class="mb-7 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">Lepadd - Lille, France | Jui
+                            2020 - Aoû 2022
+                        </time>
+                        <h3 class="text-lg font-semibold text-gray-900">FULL-STACK
+                            DEVELOPER ET MOBILE</h3>
+                        <ul class="space-y-1 list-disc list-inside text-sm font-normal text-gray-500">
+                            <li>
+                                Création d'une application mobile iOS/Android dans le domaine de la logistique
+                                permettant le suivi des livraisons avec le framework Flutter, ainsi qu'une API REST
+                                utilisant Node.js reliée à une base de données. (Mssql).
+                            </li>
+                            <li>
+                                Création d'un tableau de bord en ReactJS permettant de faire le lien entre un client et
+                                l'application mobile de gestion du suivi des livraisons.
+                            </li>
+                            <li>
+                                Aide à la création dun TMS (Logiciel de gestion de transport) en ReactJs, en équipe,
+                                dans le respect dune charte graphique (UX/UI).
+                            </li>
+                            <li>
+                                Création de designs d'interfaces pour les plateformes mobiles et web, en respectant les
+                                demandes du client et les principes de l'expérience utilisateur (UX) et de l'interface
+                                utilisateur (UI).
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400">S-Com-System. | Nov 2022 - Jui
+                            2023
+                        </time>
+                        <h3 class="text-lg font-semibold text-gray-900">FREELANCE DEVELOPER FRONT-END</h3>
+                        <ul class="space-y-1 list-disc list-inside text-sm font-normal text-gray-500">
+                            <li>
+                                J'ai eu la chance de pouvoir travailler avec le groupe Vinci pour développer une
+                                solution de calcul de retrait IFC.
+                            </li>
+                            <li>
+                                Développement collaboratif d'un tableau de bord utilisant le framework ReactJS en
+                                étroite collaboration avec une équipe backend, tout en respectant les choix du client et
+                                les fonctionnalités demandées.
+                            </li>
+                            <li>
+                                Gestion et supervision du développement de la partie front-end du tableau de bord.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Compétences (block 5) -->
+            <div class="space-y-3 p-6 bg-whit h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
+                <p class="font-semibold text-black mb-2">Compétences</p>
+                <div class="w-full grid grid-cols-3 gap-2">
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/react.png" alt="React" class="w-6 h-auto mr-2">
+                        React (JS/Native)
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/flutter.png" alt="Flutter" class="w-6 h-auto mr-2">
+                        Flutter
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/next.png" alt="Next" class="w-6 h-auto mr-2">
+                        Next js
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/NodeJs.png" alt="NodeJs" class="w-6 h-auto mr-2">
+                        Node js
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/prismaHD.png" alt="prismaHD" class="w-6 h-auto mr-2">
+                        Prisma
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
+                        <img src="assets/img/typescript.png" alt="typescript" class="w-6 h-auto mr-2">
+                        Typescript
+                    </div>
+                    <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 col-span-2">
+                        <img src="assets/img/docker.png" alt="docker" class="w-6 h-auto mr-2">
+                        Docker / Docker-compose
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hobbies (block 5) -->
+            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-1 row-span-1">
+                <p class="font-semibold text-black mb-2">Hobbies</p>
+                <div class="w-full grid grid-cols-3 gap-2">
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        Musique
+                    </span>
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        Golf
+                    </span>
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        F1
+                    </span>
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        Finance
+                    </span>
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        Investiment
+                    </span>
+                    <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
+                        Cinéma
+                    </span>
+                </div>
+            </div>
+
+            <!-- Education (block 3) -->
+            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
+                <p class="font-semibold text-black mb-2">Éducation</p>
+                <ul>
+                    <li class="pb-3">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <img class="w-auto h-8" src="/assets/img/Epitech.gif" alt="Epitech">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">
+                                    EPITECH - European Institute of Technology
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    2019 - 2024
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                     class="w-8 h-8">
+                                    <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"/>
+                                    <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"/>
+                                    <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate">
+                                    NSCM - Economics, Fintech - New York
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    2022 - 2023
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 <section id="portfolio">
@@ -243,7 +487,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -253,7 +498,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -263,7 +509,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -273,7 +520,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -283,7 +531,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -293,7 +542,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -303,7 +553,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -313,7 +564,8 @@
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
-                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="image description">
+                        <img class="rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                             alt="image description">
                     </a>
                     <figcaption class="absolute px-4 text-lg text-gray-500 font-semibold bottom-6">
                         <p>Login design</p>
@@ -334,52 +586,63 @@
         </div>
 
         <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2">
-            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r hover:bg-gray-300">
+            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r hover:bg-gray-300 cursor-pointer">
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                     <h3 class="text-lg font-semibold text-gray-900">Very easy this was to integrate</h3>
                     <p class="my-4">If you care for your time, I hands down would go with this."</p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center space-x-3">
-                    <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+                    <img class="rounded-full w-9 h-9"
+                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                         alt="profile picture">
                     <div class="space-y-0.5 font-medium text-left">
                         <div>Bonnie Green</div>
                         <div class="text-sm text-gray-500">Developer at Open AI</div>
                     </div>
                 </figcaption>
             </figure>
-            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg hover:bg-gray-300">
+            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg hover:bg-gray-300 cursor-pointer">
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
                     <h3 class="text-lg font-semibold text-gray-900">Solid foundation for any project</h3>
-                    <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+                    <p class="my-4">Designing with Figma components that can be easily translated to the utility classes
+                        of Tailwind CSS is a huge timesaver!"</p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center space-x-3">
-                    <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture">
+                    <img class="rounded-full w-9 h-9"
+                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                         alt="profile picture">
                     <div class="space-y-0.5 font-medium text-left">
                         <div>Roberta Casas</div>
                         <div class="text-sm text-gray-500">Lead designer at Dropbox</div>
                     </div>
                 </figcaption>
             </figure>
-            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r hover:bg-gray-300">
+            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r hover:bg-gray-300 cursor-pointer">
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
                     <h3 class="text-lg font-semibold text-gray-900">Mindblowing workflow</h3>
-                    <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
+                    <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level
+                        up your next application."</p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center space-x-3">
-                    <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+                    <img class="rounded-full w-9 h-9"
+                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                         alt="profile picture">
                     <div class="space-y-0.5 font-medium text-left">
                         <div>Jese Leos</div>
                         <div class="text-sm text-gray-500">Software Engineer at Facebook</div>
                     </div>
                 </figcaption>
             </figure>
-            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-br-lg hover:bg-gray-300">
+            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-br-lg hover:bg-gray-300 cursor-pointer">
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
                     <h3 class="text-lg font-semibold text-gray-900">Efficient Collaborating</h3>
-                    <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+                    <p class="my-4">You have many examples that can be used to create a fast prototype for your
+                        team."</p>
                 </blockquote>
                 <figcaption class="flex items-center justify-center space-x-3">
-                    <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                    <img class="rounded-full w-9 h-9"
+                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                         alt="profile picture">
                     <div class="space-y-0.5 font-medium text-left">
                         <div>Joseph McFall</div>
                         <div class="text-sm text-gray-500">CTO at Google</div>
@@ -387,9 +650,23 @@
                 </figcaption>
             </figure>
         </div>
+        <div>
+            <p>
+                Retrouvez-en davantage sur mon profile
+                <span>
+                    <a href="https://www.linkedin.com/in/damien-maillard-3607441a8/"
+                       class="text-yellow-500 font-semibold hover:underline">LinkedIn</a>
+                </span>
+                , ou encore ma page
+                <span>
+                    <a href="https://www.malt.fr/profile/damienmaillard"
+                       class="text-yellow-500 font-semibold hover:underline">Malt</a>
+                </span>
+            </p>
+        </div>
 
     </div>
-</section>+
+</section>
 
 <section id="contacts">
     <div class="container flex flex-row justify-center py-8 mx-auto w-screen h-screen space-x-3">
