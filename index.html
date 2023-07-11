@@ -68,7 +68,7 @@
 
     <div class="h-screen w-screen bg-black">
         <div class="container mx-auto h-full py-7">
-            <div class="flex flex-col h-full w-1/2 justify-center items-center">
+            <div class="flex flex-col h-full md:w-1/2 justify-center items-center">
                 <p lang="fr" class="text-white flex flex-col mb-6">
                     <span class="text-5xl font-semibold">Bonjour,</span>
                     <span class="text-5xl mb-3 font-bold">Je suis <span
@@ -107,13 +107,30 @@
 
 <nav class="navbar bg-white py-4 px-6 shadow">
     <div class="container mx-auto flex justify-between items-center">
-        <ul class="flex space-x-4">
+        <ul class="hidden md:flex space-x-4">
             <li><a href="#services" class="hover:underline">Mes services</a></li>
             <li><a href="#profile" class="hover:underline">À propos de moi</a></li>
             <li><a href="#portfolio" class="hover:underline">PortFolio</a></li>
             <li><a href="#recommendation" class="hover:underline">Recommendations</a></li>
             <li><a href="#contacts" class="hover:underline">Contact</a></li>
         </ul>
+
+        <div class="md:hidden">
+            <button class="flex items-center text-xl font-semibold">
+                <span class="sr-only">Menu</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul class="hidden md:hidden space-y-2">
+                <li><a href="#services" class="block hover:underline">Mes services</a></li>
+                <li><a href="#profile" class="block hover:underline">À propos de moi</a></li>
+                <li><a href="#portfolio" class="block hover:underline">PortFolio</a></li>
+                <li><a href="#recommendation" class="block hover:underline">Recommendations</a></li>
+                <li><a href="#contacts" class="block hover:underline">Contact</a></li>
+            </ul>
+        </div>
+
         <div class="flex flex-row items-center space-x-2">
             <a href="#" class="text-xl font-semibold">Damien MAILLARD</a>
             <img alt="Damien-M" src="./assets/img/damien.png" class="w-10 h-10 rounded-full">
@@ -121,18 +138,18 @@
     </div>
 </nav>
 
-<section id="services">
-    <div class="container flex flex-col justify-center py-8 mx-auto w-screen h-screen space-x-3">
-        <div class="flex flex-col justify-center text-center items-center w-full">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Mes services</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+<section id="services" class="min-h-screen flex flex-col justify-center items-center">
+    <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-black mb-4">Mes services</h2>
+            <p class="mb-8 text-gray-500 sm:text-xl">
                 Voici ce que je vous propose : je serais ravi de vous aider dans vos projets et de vous apporter une
                 véritable expérience en tant que développeur passionné. N'hésitez pas à me contacter pour obtenir plus
                 d'informations.
             </p>
         </div>
-        <div class="w-full grid grid-cols-4 gap-4 items-center">
-            <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow col-span-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:col-span-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
                     <path d="M19.5 6h-15v9h15V6z"/>
@@ -141,15 +158,14 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Front-End Web et
-                        Mobile</h5>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Front-End Web et Mobile</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500">Je développe différents types d'interfaces : des tableaux de
-                    bord, des sites vitrine, des BackOffice ou encore des interfaces SAS. En utilisant des technologies
-                    modernes adaptées pour votre projet.</p>
+                <p class="mb-3 text-gray-500">Je développe différents types d'interfaces : des tableaux de bord,
+                    des sites vitrine, des BackOffice ou encore des interfaces SAS. En utilisant des technologies modernes
+                    adaptées pour votre projet.</p>
             </div>
 
-            <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow col-span-2">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:col-span-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
                     <path fill-rule="evenodd"
@@ -159,12 +175,11 @@
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Back-End API</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500">Je peux créer et gérer votre API ainsi que d'autres serveurs
-                    dont vous pourriez avoir besoin. Je suis également responsable de la création et de la gestion de
-                    votre base de données, dans le langage le mieux adapté à votre projet et à votre système.</p>
+                <p class="mb-3 text-gray-500">Je peux créer et gérer votre API ainsi que d'autres serveurs dont vous pourriez avoir besoin.
+                    Je suis également responsable de la création et de la gestion de votre base de données, dans le langage le mieux adapté à votre projet et à votre système.</p>
             </div>
 
-            <div class="max-w-sm h-64 p-6 bg-white border border-gray-200 rounded-lg shadow">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
                     <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"/>
@@ -172,12 +187,11 @@
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Design UX/UI</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500">Je mets à votre disposition mon expérience en matière de
-                    design, mon regard de designer, ainsi que ma rigueur en matière d'UX/UI, que ce soit pour des
-                    applications mobiles ou des sites web.</p>
+                <p class="mb-3 text-gray-500">Je mets à votre disposition mon expérience en matière de design, mon regard de designer,
+                    ainsi que ma rigueur en matière d'UX/UI, que ce soit pour des applications mobiles ou des sites web.</p>
             </div>
 
-            <div class="max-w-sm h-64 p-6 bg-white border border-gray-200 rounded-lg shadow">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
                     <path fill-rule="evenodd"
@@ -185,15 +199,13 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Conseils sur le management de
-                        vos Projet</h5>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Conseils sur le management de vos projets</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">J'ai de l'expérience dans la gestion de
-                    projets de petite à grande envergure. Je vous propose mes conseils novateurs en matière de gestion
-                    de vos projets.</p>
+                <p class="mb-3 text-gray-500 dark:text-gray-400">J'ai de l'expérience dans la gestion de projets de petite à grande envergure.
+                    Je vous propose mes conseils novateurs en matière de gestion de vos projets.</p>
             </div>
 
-            <div class="max-w-sm h-64 p-6 bg-white border border-gray-200 rounded-lg shadow">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
                     <path d="M5.507 4.048A3 3 0 017.785 3h8.43a3 3 0 012.278 1.048l1.722 2.008A4.533 4.533 0 0019.5 6h-15c-.243 0-.482.02-.715.056l1.722-2.008z"/>
@@ -204,47 +216,46 @@
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Mise en production</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Je peux prendre en charge la mise en
-                    production de votre projet, ainsi que sa maintenance.</p>
+                <p class="mb-3 text-gray-500 dark:text-gray-400">Je peux prendre en charge la mise en production de votre projet, ainsi que sa maintenance.</p>
             </div>
 
-
-            <div class="max-w-sm h-64 p-6 bg-white border border-gray-200 rounded-lg shadow">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                      class="w-7 h-7 text-gray-500 mb-3">
-                    <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"/>
+                    <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001 .708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Un report sur mon travail</h5>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Un rapport sur mon travail</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Étant très rigoureux dans mon travail, je
-                    vous fournirai des rapports détaillés chaque semaine sur l'avancement du projet, ainsi qu'un suivi
-                    grâce à un outil de gestion tel que Trello.</p>
+                <p class="mb-3 text-gray-500 dark:text-gray-400">Étant très rigoureux dans mon travail, je vous fournirai des rapports détaillés chaque semaine sur l'avancement du projet, ainsi qu'un suivi grâce à un outil de gestion tel que Trello.</p>
             </div>
-
         </div>
     </div>
 </section>
 
-<section id="profile">
-    <div class="container flex items-center mx-auto w-screen h-screen">
-        <div class="flex items-center justify-center w-full h-auto grid grid-cols-4 gap-2">
+<section id="profile" class="min-h-screen flex flex-col justify-center items-center">
+    <div class="container mx-auto px-4 py-10 sm:px-6">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-black mb-4">À propos de moi</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
+
             <!-- Profile Card (block 1) -->
-            <div class="space-y-3 h-full w-full p-6 bg-white border border-gray-200 rounded-lg shadow row-span-2 col-span-1">
-                <img alt="Damien-md" src="./assets/img/damien.png"
-                     class="w-24 h-24 rounded-md mb-2">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:row-span-2">
+                <div class="flex items-center justify-center">
+                    <img alt="Damien-md" src="./assets/img/damien.png" class="w-24 h-24 rounded-md mb-2">
+                </div>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Damien
-                        MAILLARD</h5>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 text-center">Damien MAILLARD</h5>
                 </a>
-                <div class="flex flex-col">
+                <div class="flex flex-col items-center">
                     <div class="flex flex-row space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                              class="w-6 h-6 text-gray-900">
                             <path fill-rule="evenodd"
                                   d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                                  clip-rule="evenodd"/>
-                            <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"/>
+                                  clip-rule="evenodd" />
+                            <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
                         </svg>
                         <p class="mb-3 font-normal text-gray-400">FullStack Developer</p>
                     </div>
@@ -253,36 +264,21 @@
                              class="w-6 h-6 text-gray-900">
                             <path fill-rule="evenodd"
                                   d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                                  clip-rule="evenodd"/>
+                                  clip-rule="evenodd" />
                         </svg>
                         <p class="mb-3 font-normal text-gray-400">Lille, France</p>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col space-y-2">
                     <p class="font-normal text-gray-400">Adresse e-mail</p>
-                    <a href="mailto:damien.jd.maillard@gmail.com"
-                       class="text-black hover:underline">
-                        damien.jd.maillard@gmail.com
-                    </a>
-                </div>
-                <div class="flex flex-col">
+                    <a href="mailto:damien.jd.maillard@gmail.com" class="text-black hover:underline">damien.jd.maillard@gmail.com</a>
                     <p class="font-normal text-gray-400">Adresse personnelle</p>
                     <p class="text-black">10 Rue Jeanne Maillotte, Lille 59800, France</p>
-                </div>
-                <div class="flex flex-col">
                     <p class="font-normal text-gray-400">Numéro de téléphone</p>
-                    <a href="tel:+337 86 91 92 38" class="text-black hover:underline">
-                        +33 7 86 91 92 38
-                    </a>
-                </div>
-                <div class="flex flex-col">
+                    <a href="tel:+33786919238" class="text-black hover:underline">+33 7 86 91 92 38</a>
                     <p class="font-normal text-gray-400">Language</p>
-                    <p class="font-normal text-black">
-                        Français <span class="text-gray-400">(langue maternelle)</span>
-                    </p>
-                    <p class="font-normal text-black">
-                        Anglais <span class="text-gray-400">(courant)</span>
-                    </p>
+                    <p class="text-black">Français <span class="text-gray-400">(langue maternelle)</span></p>
+                    <p class="text-black">Anglais <span class="text-gray-400">(courant)</span></p>
                 </div>
                 <div class="flex flex-col">
                     <p class="font-semibold text-black mb-2">Compétence logicielle</p>
@@ -296,10 +292,9 @@
                 </div>
             </div>
 
-
             <!-- À propos de moi (block 2) -->
-            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
-                <p class="font-semibold text-black mb-2">À propos de moi</p>
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:col-span-2">
+                <p class="font-semibold text-black mb-2">Moi</p>
                 <p class="text-gray-400 indent-8">
                     Je suis un développeur passionné par le développement et les nouvelles technologies. Je suis constamment en auto-formation, à la recherche des meilleures technologies et des meilleures méthodes pour réaliser et améliorer mes projets. Je suis une personne très curieuse, j'aime découvrir de nouvelles choses et je suis toujours prêt à relever de nouveaux défis. Je suis efficace et autonome, capable de travailler seul ou en équipe. Je m'adapte également rapidement à n'importe quelle situation.
                 </p>
@@ -307,12 +302,12 @@
                     J'apprécie le contact avec les clients afin de comprendre leurs besoins et leur proposer la meilleure solution. Grâce à ma formation et ma passion pour le design (UX/UI), je suis capable de créer des maquettes et des prototypes pour les interfaces mobiles ou web de vos projets. Je suis rigoureux et j'attache une grande importance à ce que mon code soit propre et bien structuré, pour une meilleure maintenabilité et évolutivité. Je suis également axé sur les performances et la qualité de votre produit.
                 </p>
                 <p class="text-gray-400 indent-8">
-                    Je serais ravi de mettre mes compétences à votre service. N'hésitez pas à me  <a href="#contacts" class="hover:underline font-semibold text-gray-500">contacter</a> pour obtenir plus d'informations.
+                    Je serais ravi de mettre mes compétences à votre service. N'hésitez pas à me <a href="#contacts" class="hover:underline font-semibold text-gray-500">contacter</a> pour obtenir plus d'informations.
                 </p>
             </div>
 
             <!-- Expérience (block 4) -->
-            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow row-span-3 col-span-1">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:row-span-3">
                 <p class="font-semibold text-black mb-2">Expérience</p>
                 <ol class="relative w-full border-l border-gray-200 dark:border-gray-700">
                     <li class="mb-7 ml-4">
@@ -368,9 +363,9 @@
             </div>
 
             <!-- Compétences (block 5) -->
-            <div class="space-y-3 p-6 bg-whit h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:col-span-2">
                 <p class="font-semibold text-black mb-2">Compétences</p>
-                <div class="w-full grid grid-cols-3 gap-2">
+                <div class="grid grid-cols-3 gap-2">
                     <div class="flex items-center text-gray-900 bg-white border border-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">
                         <img src="assets/img/react.png" alt="React" class="w-6 h-auto mr-2">
                         React (JS/Native)
@@ -402,11 +397,10 @@
                 </div>
             </div>
 
-
             <!-- Hobbies (block 5) -->
-            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-1 row-span-1">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
                 <p class="font-semibold text-black mb-2">Hobbies</p>
-                <div class="w-full grid grid-cols-3 gap-2">
+                <div class="grid grid-cols-3 gap-2">
                     <span class="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded">
                         Musique
                     </span>
@@ -429,7 +423,7 @@
             </div>
 
             <!-- Education (block 3) -->
-            <div class="space-y-3 p-6 bg-white h-full w-full border border-gray-200 rounded-lg shadow col-span-2 row-span-1">
+            <div class="bg-white border border-gray-200 rounded-lg shadow p-6 md:col-span-2">
                 <p class="font-semibold text-black mb-2">Éducation</p>
                 <ul>
                     <li class="pb-3">
@@ -450,40 +444,36 @@
                     <li class="pb-3">
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                     class="w-8 h-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
                                     <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"/>
-                                    <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"/>
-                                    <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"/>
+                                    <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.348.664l.336.177c.325.17.656.332.992.483a50.052 50.052 0 0010.06 2.996c.335-.15.666-.313.992-.482l.336-.178c.447-.23.896-.451 1.348-.664a1.5 1.5 0 00-.139-2.509v-1.27a48.347 48.347 0 01-3.484-1.934.75.75 0 01-.24-1.072z"/>
                                 </svg>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <p class="text-sm font-medium text-gray-900 truncate">
-                                    NSCM - Economics, Fintech - New York
+                                    Lycée Baggio - Lille
                                 </p>
                                 <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                    2022 - 2023
+                                    2017 - 2019
                                 </p>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </section>
 
-
-<section id="portfolio">
-    <div class="container flex flex-col justify-center items-center py-8 mx-auto w-screen h-screen">
+<section id="portfolio" class="min-h-screen flex flex-col justify-center items-center mb-10">
+    <div class="container flex flex-col justify-center items-center py-8 mx-auto w-full">
         <div class="w-full flex flex-col">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Portfolio</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
                 Voici quelques projets sur lesquels j'ai travaillé et des designs que j'ai réalisés.
             </p>
         </div>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
             <div class="w-full h-auto">
                 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
                     <a href="#">
@@ -668,12 +658,12 @@
     </div>
 </section>
 
-<section id="contacts">
-    <div class="container flex flex-row justify-center py-8 mx-auto w-screen h-screen space-x-3">
-        <div class="flex flex-col justify-center items-center h-full w-3/5">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contactez Moi</h2>
+<section id="contacts" class="min-h-screen flex flex-col justify-center items-center">
+    <div class="container flex flex-col sm:flex-row justify-center py-8 mx-auto w-full h-screen space-y-3 sm:space-x-3">
+        <div class="flex flex-col justify-center items-center sm:h-full sm:w-3/5">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contactez-moi</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
-                Vous voulez travailler avec moi . Envoyez-moi un message grace à ce formulaire ! Je vous recontacterais
+                Vous voulez travailler avec moi. Envoyez-moi un message grâce à ce formulaire ! Je vous recontacterai
                 dans les plus brefs délais.
             </p>
             <form class="space-y-8 w-full" id="contact-form">
@@ -716,26 +706,25 @@
                         </a>
                     </div>
                 </div>
-
             </form>
             <p class="flex flex-col text-start w-full mt-10">
-                <span class="font-semibold text-1xl">Information de contact autre</span>
+                <span class="font-semibold text-1xl">Informations de contact</span>
                 <span class="text-gray-500">
                     <a href="mailto:damien.jd.maillard@gmail.com"
                        class="text-gray-500 hover:text-gray-600 hover:underline">
-                        Mon mail professional [damien.jd.maillard@gmail.com]
+                        Mon mail professionnel [damien.jd.maillard@gmail.com]
                     </a>
                 </span>
                 <span class="text-gray-500">
-                    <a href="tel:+337 86 91 92 38" class="text-gray-500 hover:text-gray-600 hover:underline">
+                    <a href="tel:+33786919238" class="text-gray-500 hover:text-gray-600 hover:underline">
                         Mon numéro de téléphone [+33 7 86 91 92 38]
                     </a>
                 </span>
             </p>
         </div>
-
     </div>
 </section>
+
 
 <footer class="footer py-6">
     <div class="container mx-auto text-center flex flex-row justify-between">
