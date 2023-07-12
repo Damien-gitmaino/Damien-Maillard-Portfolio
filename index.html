@@ -62,7 +62,7 @@
                  stroke="currentColor" class="w-5 h-5 mr-2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
             </svg>
-            Voir plus loin
+            <p id="button-more-info">Voir plus loin</p>
         </a>
     </div>
 
@@ -70,15 +70,14 @@
         <div class="container mx-auto h-full py-7">
             <div class="flex flex-col h-full md:w-1/2 justify-center items-center">
                 <p lang="fr" class="text-white flex flex-col mb-6">
-                    <span class="text-5xl font-semibold">Bonjour,</span>
-                    <span class="text-5xl mb-3 font-bold">Je suis <span
-                            class="text-yellow-500 text-6xl">Damien MAILLARD</span></span>
-                    <span class="text-base indent-8">
+                    <span id="text-hello" class="text-5xl font-semibold">Bonjour, Je suis</span>
+                    <span class="text-yellow-500 text-6xl font-bold mb-3">Damien MAILLARD</span>
+                    <span class="text-base indent-8" id="text-short-presentation">
                         Développeur étudiant à Epitech, passionné par le développement et les nouvelles technologies, expert en React Native, React JS, Node Js et SQL freelance depuis plus de 1 ans et 4 ans en entreprise, j'ai collaboré sur plusieurs projets Mobile et Web variés. Au cours de ces projets, j'ai assumé divers rôles tels que développeur, designer et chef de projet. Je maîtrise principalement les technologies React Native, React JS, Node JS et SQL.
                     </span>
                 </p>
                 <p lang="fr" class="text-white mb-6 text-start w-full">
-                    Vous voulez travaillez avec moi, <span
+                    <span id="text-contact-section-1">Vous voulez travaillez avec moi,</span> <span id="text-contact-section-2"
                         class="text-yellow-500 text-1xl font-bold">contactez-moi !</span>
                 </p>
                 <div class="flex flex-row justify-start items-center w-full space-x-2">
@@ -97,7 +96,7 @@
                             <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
                             <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                         </svg>
-                        Contactez-moi !
+                        <p id="text-button-contact">Contactez-moi !</p>
                     </a>
                 </div>
             </div>
@@ -108,8 +107,8 @@
 <nav class="navbar bg-white py-4 px-6 shadow">
     <div class="container mx-auto flex justify-between items-center">
         <ul class="hidden md:flex space-x-4">
-            <li><a href="#services" class="hover:underline">Mes services</a></li>
-            <li><a href="#profile" class="hover:underline">À propos de moi</a></li>
+            <li><a id="text-nav-service" href="#services" class="hover:underline">Mes services</a></li>
+            <li><a id="text-nav-about-me" href="#profile" class="hover:underline">À propos de moi</a></li>
             <li><a href="#portfolio" class="hover:underline">PortFolio</a></li>
             <li><a href="#recommendation" class="hover:underline">Recommendations</a></li>
             <li><a href="#contacts" class="hover:underline">Contact</a></li>
@@ -123,8 +122,8 @@
                 </svg>
             </button>
             <ul class="hidden md:hidden space-y-2">
-                <li><a href="#services" class="block hover:underline">Mes services</a></li>
-                <li><a href="#profile" class="block hover:underline">À propos de moi</a></li>
+                <li><a id="text-nav-menu-service" href="#services" class="block hover:underline">Mes services</a></li>
+                <li><a id="text-nav-menu-about-me" href="#profile" class="block hover:underline">À propos de moi</a></li>
                 <li><a href="#portfolio" class="block hover:underline">PortFolio</a></li>
                 <li><a href="#recommendation" class="block hover:underline">Recommendations</a></li>
                 <li><a href="#contacts" class="block hover:underline">Contact</a></li>
@@ -141,8 +140,8 @@
 <section id="services" class="min-h-screen flex flex-col justify-center items-center">
     <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-            <h2 class="text-4xl font-extrabold text-black mb-4">Mes services</h2>
-            <p class="mb-8 text-gray-500 sm:text-xl">
+            <h2 id="text-service-title" class="text-4xl font-extrabold text-black mb-4">Mes services</h2>
+            <p id="text-service-description" class="mb-8 text-gray-500 sm:text-xl">
                 Voici ce que je vous propose : je serais ravi de vous aider dans vos projets et de vous apporter une
                 véritable expérience en tant que développeur passionné. N'hésitez pas à me contacter pour obtenir plus
                 d'informations.
@@ -158,9 +157,9 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Front-End Web et Mobile</h5>
+                    <h5 id="text-service-card-1-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Front-End Web et Mobile</h5>
                 </a>
-                <p class="mb-3 text-gray-500">Je développe différents types d'interfaces : des tableaux de bord,
+                <p id="text-service-card-1-description" class="mb-3 text-gray-500">Je développe différents types d'interfaces : des tableaux de bord,
                     des sites vitrine, des BackOffice ou encore des interfaces SAS. En utilisant des technologies modernes
                     adaptées pour votre projet.</p>
             </div>
@@ -173,10 +172,12 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Back-End API</h5>
+                    <h5 id="text-service-card-2-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Développement Back-End API</h5>
                 </a>
-                <p class="mb-3 text-gray-500">Je peux créer et gérer votre API ainsi que d'autres serveurs dont vous pourriez avoir besoin.
-                    Je suis également responsable de la création et de la gestion de votre base de données, dans le langage le mieux adapté à votre projet et à votre système.</p>
+                <p id="text-service-card-2-description" class="mb-3 text-gray-500">
+                    Je peux créer et gérer votre API ainsi que d'autres serveurs dont vous pourriez avoir besoin.
+                    Je suis également responsable de la création et de la gestion de votre base de données, dans le langage le mieux adapté à votre projet et à votre système.
+                </p>
             </div>
 
             <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
@@ -185,9 +186,9 @@
                     <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Design UX/UI</h5>
+                    <h5 id="text-service-card-3-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Design UX/UI</h5>
                 </a>
-                <p class="mb-3 text-gray-500">Je mets à votre disposition mon expérience en matière de design, mon regard de designer,
+                <p id="text-service-card-3-description" class="mb-3 text-gray-500">Je mets à votre disposition mon expérience en matière de design, mon regard de designer,
                     ainsi que ma rigueur en matière d'UX/UI, que ce soit pour des applications mobiles ou des sites web.</p>
             </div>
 
@@ -199,9 +200,9 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Conseils sur le management de vos projets</h5>
+                    <h5 id="text-service-card-4-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Conseils sur le management de vos projets</h5>
                 </a>
-                <p class="mb-3 text-gray-500 dark:text-gray-400">J'ai de l'expérience dans la gestion de projets de petite à grande envergure.
+                <p id="text-service-card-4-description" class="mb-3 text-gray-500 dark:text-gray-400">J'ai de l'expérience dans la gestion de projets de petite à grande envergure.
                     Je vous propose mes conseils novateurs en matière de gestion de vos projets.</p>
             </div>
 
@@ -214,9 +215,9 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Mise en production</h5>
+                    <h5 id="text-service-card-5-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Mise en production</h5>
                 </a>
-                <p class="mb-3 text-gray-500 dark:text-gray-400">Je peux prendre en charge la mise en production de votre projet, ainsi que sa maintenance.</p>
+                <p id="text-service-card-5-description" class="mb-3 text-gray-500 dark:text-gray-400">Je peux prendre en charge la mise en production de votre projet, ainsi que sa maintenance.</p>
             </div>
 
             <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
@@ -225,9 +226,9 @@
                     <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001 .708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"/>
                 </svg>
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Un rapport sur mon travail</h5>
+                    <h5 id="text-service-card-6-title" class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Un rapport sur mon travail</h5>
                 </a>
-                <p class="mb-3 text-gray-500 dark:text-gray-400">Étant très rigoureux dans mon travail, je vous fournirai des rapports détaillés chaque semaine sur l'avancement du projet, ainsi qu'un suivi grâce à un outil de gestion tel que Trello.</p>
+                <p id="text-service-card-6-description" class="mb-3 text-gray-500 dark:text-gray-400">Étant très rigoureux dans mon travail, je vous fournirai des rapports détaillés chaque semaine sur l'avancement du projet, ainsi qu'un suivi grâce à un outil de gestion tel que Trello.</p>
             </div>
         </div>
     </div>
@@ -236,7 +237,7 @@
 <section id="profile" class="min-h-screen flex flex-col justify-center items-center">
     <div class="container mx-auto px-4 py-10 sm:px-6">
         <div class="text-center">
-            <h2 class="text-4xl font-extrabold text-black mb-4">À propos de moi</h2>
+            <h2 id="text-profile-title" class="text-4xl font-extrabold text-black mb-4">À propos de moi</h2>
         </div>
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
 
@@ -270,18 +271,18 @@
                     </div>
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <p class="font-normal text-gray-400">Adresse e-mail</p>
+                    <p id=text-addr-title" class="font-normal text-gray-400">Adresse e-mail</p>
                     <a href="mailto:damien.jd.maillard@gmail.com" class="text-black hover:underline">damien.jd.maillard@gmail.com</a>
-                    <p class="font-normal text-gray-400">Adresse personnelle</p>
+                    <p id="text-addr-me-title" class="font-normal text-gray-400">Adresse personnelle</p>
                     <p class="text-black">Lille 59800, France</p>
-                    <p class="font-normal text-gray-400">Numéro de téléphone</p>
+                    <p id="text-phone-number-title" class="font-normal text-gray-400">Numéro de téléphone</p>
                     <a href="tel:+33786919238" class="text-black hover:underline">+33 7 86 91 92 38</a>
                     <p class="font-normal text-gray-400">Language</p>
-                    <p class="text-black">Français <span class="text-gray-400">(langue maternelle)</span></p>
-                    <p class="text-black">Anglais <span class="text-gray-400">(courant)</span></p>
+                    <p class="text-black"><span id="text-language-french-title">Français</span> <span id="text-language-french-type" class="text-gray-400">(langue maternelle)</span></p>
+                    <p class="text-black"><span id="text-language-english-title">Anglais</span> <span d="text-language-english-type" class="text-gray-400">(courant)</span></p>
                 </div>
                 <div class="flex flex-col mt-3">
-                    <p class="font-semibold text-black mb-2">Compétence logicielle</p>
+                    <p id="text-software-title" class="font-semibold text-black mb-2">Compétence logicielle</p>
                     <div class="flex flex-row space-x-2">
                         <img src="./assets/img/github.png" alt="GithubIcon" class="w-7 h-7">
                         <img src="./assets/img/Office.png" alt="OfficeIcon" class="w-7 h-7">
@@ -710,6 +711,7 @@
     </div>
 </footer>
 
+<script type="text/javascript" src="./assets/js/translate.js"/>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>

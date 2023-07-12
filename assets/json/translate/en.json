@@ -1,0 +1,141 @@
+{
+  "lang": "en",
+  "data": [
+    {
+      "id": "button-more-info",
+      "content": "See more"
+    },
+    {
+      "id": "text-hello",
+      "content": "Hello, I am"
+    },
+    {
+      "id": "text-short-presentation",
+      "content": "Student Developer at Epitech, passionate about development and new technologies, with expertise in React Native, React JS, Node JS, and SQL. I have been freelancing for over 1 year and have 4 years of experience in the corporate sector. I have collaborated on various Mobile and Web projects, assuming different roles such as developer, designer, and project manager. My primary skills lie in React Native, React JS, Node JS, and SQL technologies."
+    },
+    {
+      "id": "text-contact-section-1",
+      "content": "You want to work with me,"
+    },
+    {
+      "id": "text-contact-section-2",
+      "content": "contact me!"
+    },
+    {
+      "id": "text-button-contact",
+      "content": "Contact me!"
+    },
+    {
+      "id": "text-button-contact",
+      "content": "Contact me!"
+    },
+    {
+      "id": "text-nav-service",
+      "content": "My services"
+    },
+    {
+      "id": "text-nav-menu-service",
+      "content": "My services"
+    },
+    {
+      "id": "text-nav-about-me",
+      "content": "About me"
+    },
+    {
+      "id": "text-nav-menu-about-me",
+      "content": "About me"
+    },
+    {
+      "id": "text-service-title",
+      "content": "My services"
+    },
+    {
+      "id": "text-service-description",
+      "content": "Here's what I'm offering: I would be delighted to assist you with your projects and provide you with a true experience as a passionate developer. Please feel free to contact me for more information."
+    },
+    {
+      "id": "text-service-card-1-title",
+      "content": "Front-End Web and Mobile Development"
+    },
+    {
+      "id": "text-service-card-1-description",
+      "content": "I develop various types of interfaces: dashboards, showcase websites, back offices, and SAS interfaces. I utilize modern technologies tailored to your project."
+    },
+    {
+      "id": "text-service-card-2-title",
+      "content": "Back-End API development"
+    },
+    {
+      "id": "text-service-card-2-description",
+      "content": "I can create and manage your API, as well as other servers you may need. I am also responsible for the creation and management of your database, using the most suitable language for your project and system."
+    },
+    {
+      "id": "text-service-card-3-title",
+      "content": "Design UX/UI"
+    },
+    {
+      "id": "text-service-card-3-description",
+      "content": "I offer you my experience in design, my designer's perspective, and my attention to detail in UX/UI, whether it be for mobile applications or websites."
+    },
+    {
+      "id": "text-service-card-4-title",
+      "content": "Advice on managing your projects"
+    },
+    {
+      "id": "text-service-card-4-description",
+      "content": "I have experience in managing projects of small to large scale. I offer innovative advice in managing your projects."
+    },
+    {
+      "id": "text-service-card-5-title",
+      "content": "Going into production"
+    },
+    {
+      "id": "text-service-card-5-description",
+      "content": "I can take charge of putting your project into production, as well as its maintenance."
+    },
+    {
+      "id": "text-service-card-6-title",
+      "content": "A report on my work"
+    },
+    {
+      "id": "text-service-card-6-description",
+      "content": "As I'm very rigorous in my work, I'll provide you with detailed weekly reports on the progress of the project, as well as tracking using a management tool such as Trello."
+    },
+    {
+      "id": "text-profile-title",
+      "content": "About me"
+    },
+    {
+      "id": "text-addr-title",
+      "content": "E-mail address"
+    },
+    {
+      "id": "text-addr-me-title",
+      "content": "Personal address"
+    },
+    {
+      "id": "text-phone-number-title",
+      "content": "Phone number"
+    },
+    {
+      "id": "text-language-french-title",
+      "content": "French"
+    },
+    {
+      "id": "text-language-french-type",
+      "content": "(native language)"
+    },
+    {
+      "id": "text-language-english-title",
+      "content": "English"
+    },
+    {
+      "id": "text-language-english-type",
+      "content": "(current language)"
+    },
+    {
+      "id": "text-software-title",
+      "content": "Software skills"
+    }
+  ]
+}
